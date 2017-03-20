@@ -4,26 +4,21 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-//@Component("killerCoach")
 @Component
-public class KungfuCoach implements Coach {
-
-	public FortuneService fortuneService;
+public class BoxingCoach implements Coach {
 	
 	@Autowired
-	public KungfuCoach(@Qualifier("happyFortuneService") FortuneService theFortuneService) {
-		fortuneService = theFortuneService;
-	}
-
+	@Qualifier("happyFortuneService")
+	public FortuneService fortuneService;
+		
 	@Override
 	public String getDailyWorkout() {
 		// TODO Auto-generated method stub
-		return "100 Left Kicks";
+		return "Skipping for 30 minutes";
 	}
 
 	@Override
 	public String getDailyFortuneMessage() {
-		// TODO Auto-generated method stub
 		return fortuneService.getFortuneMessage();
 	}
 
