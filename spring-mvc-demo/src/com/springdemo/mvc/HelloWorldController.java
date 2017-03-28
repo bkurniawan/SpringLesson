@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequestMapping("/hello") // this will set all the mapping url below relative to '/hello'
 public class HelloWorldController {
 
 	@RequestMapping("/login")
