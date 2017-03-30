@@ -6,6 +6,6 @@
 
 <body>
 
-  The Student is Confirmed : ${student.firstName} ${student.lastName}
+  The Student is Confirmed : ${student.firstName} ${student.lastName} from ${student.country}
 </body>
 </html>
