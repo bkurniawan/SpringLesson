@@ -49,6 +49,10 @@
 		path="country" adalah nama field di Student class.
 		Spring akan mengisi setCountry() dengan option pada saat submit. 
 		jadi pada saat kita memanggil ${student.country}, Spring akan memanggil getCountry() di Student class yang sudah diisi oleh Spring dengan value yang dipilih.
+		
+		
+		
+		agfasjnasfsnfjjnjnjnjk
 
 	</form:form>
 </body>
